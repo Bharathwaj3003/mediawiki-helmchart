@@ -64,8 +64,18 @@ Click on install and you will end up in the page below
 ![LocalSettingsPHP](./output-images/LocalSettingsPHP.png)
 Download the file and copy it into the mediaWiki workspace directory inside the mediaWiki container
 ```
-kubectl cp ~/Downloads/LocalSettings.php mediawiki-84bfdcf4c7-tb2vz:/var/www/html/
+kubectl cp ~/Downloads/LocalSettings.php mediawiki-pod-name:/var/www/html/
 ```
 Now Click on the Home page to view the new MediaWiki Page
 ![Final_Output](./output-images/Final_output.png)
+
+## System Specification of the repo owner
+This application is built on ubuntu 22.04. MediaWiki Docker Image is based on CentOS7
+
+## Improvements and suggestions
+
+1. MediaWiki installation document must be updated, the mediawiki version 1.41 requires atleast php version 7.4, while the document mentions 7.3 for installation.
+2. CI/CD tools such as Jenkins, Azure Pipelines can be used to automate the above deployment process.
+3. This Setup can be installed to any of the cloud platform's kubernetes service such as AWS EKS.
+4. Helm chart provided above is simplified, it can be improved by adding more values to values.yaml and securely storing passwords by using kubernetes secrets.
 
