@@ -1,4 +1,4 @@
-# Use CentOS 8 as the base image
+# Use CentOS 7 as the base image
 FROM centos:7
 
 # Installing dependencies
