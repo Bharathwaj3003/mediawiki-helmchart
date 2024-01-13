@@ -1,0 +1,4 @@
+apiVersion: v2
+name: mediawiki-mariadb-chart
+description: A Helm chart for MediaWiki with MariaDB
+version: 0.1.0

@@ -1,0 +1,10 @@
+mediawiki:
+  image: mediawiki:1.0
+  port: 80
+  ingress:
+    enabled: true
+    host: mediawiki.local
+
+mariadb:
+  image: mediawiki-db:1.0
+  rootPassword: admin@123TECHNOLOGY # Root password for mysql database
